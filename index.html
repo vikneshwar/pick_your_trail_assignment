@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900' rel='stylesheet' type='text/css'>
+	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style_new.css">
+	<script src="js/bootstrap.min.js"></script>
+	<script type="text/javascript">
+	$(document).ready(function($) {
+		
+		$("#back-to-top").hide();
+
+		$(function () {
+			$(window).scroll(function () {
+				if ($(this).scrollTop() > 100) {
+					$('#back-to-top').fadeIn();
+				} else {
+					$('#back-to-top').fadeOut();
+				}
+			});
+	
+			$('#back-top a').on("click",function () {
+				$('body,html').animate({
+					scrollTop: 0
+				}, 1200);
+				return false;
+			});
+		});
+		$("#scroll_portfolio, .nav-item a").on("click",function(event){		
+			event.preventDefault();
+			$('html,body').animate({scrollTop:$(this.hash).offset().top},1200);
+		});
+	});
+	</script>
+</head>
+<body>
+	<div class="header">
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<a class="navbar-brand" href="#">
+				<img class="image logo" src="images/1071.jpg"/ width="200" height="100">
+			</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="menu">
+				<ul class="nav navbar-nav navbar-right ml-auto">
+					<li class="nav-item active"><a href="#home" class="nav-link scroll">Home</a></li>
+					<li class="nav-item"><a href="#portfolio" class="nav-link scroll">Portfolio</a></li>
+					<li class="nav-item"><a href="#about" class="nav-link scroll">About</a></li>
+					<li class="nav-item"><a href="#contact" class="nav-link scroll">Contact</a></li>
+				</ul>
+			</div>
+		</nav>
+	</div>
+
+	<div class="container-fluid">
+		<div id="banner">
+			<section>
+				<h2>We Build <strong>Brand</strong></h2>
+				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.  when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+				<a href="#" id="learn_more">Learn More</a>
+				<a href="#portfolio" id="scroll_portfolio"><span></span></a>
+			</section>
+		</div>
+
+		<div id= "portfolio" class="">
+			<div class="container">
+				<div class="row" id="portfolio_header">
+					<h2 class="col-md-12 text-center">Portfolio</h2>
+				</div>
+
+				<div class="row" id="portfolio_text">
+					<p class="col-md-12 text-center">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+				</div>
+
+				<div class="row" id="portfolio_buttons">
+					<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12"><div><p>ALL</p></div></div>
+					<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12"><div><p>WED DESIGN</p></div></div>
+					<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12"><div><p>GRAPHIC DESIGN</p></div></div>
+					<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12"><div><p>FLAT DESIGN</p></div></div>
+				</div>
+
+				<div class="row" id="portfolio_items_1">
+					<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 item">
+						<div class="image_container">
+							<img src="images/portfolio_images/Roundicons-01.png">
+							<div class="overlay">Web Design</div>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 item">
+						<div class="image_container">
+							<img src="images/portfolio_images/Roundicons-02.png">
+							<div class="overlay">Web Design</div>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 item">
+						<div class="image_container">
+							<img src="images/portfolio_images/Roundicons-03.png">
+							<div class="overlay">Web Design</div>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 item">
+						<div class="image_container">
+							<img src="images/portfolio_images/Roundicons-04.png">
+							<div class="overlay">Web Design</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="row" id="portfolio_items_2">
+					<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 item">
+						<div class="image_container">
+							<img src="images/portfolio_images/Roundicons-05.png">
+							<div class="overlay">Web Design</div>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 item">
+						<div class="image_container">
+							<img src="images/portfolio_images/Roundicons-06.png">
+							<div class="overlay">Web Design</div>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 item">
+						<div class="image_container">
+							<img src="images/portfolio_images/Roundicons-07.png">
+							<div class="overlay">Web Design</div>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 item">
+						<div class="image_container">
+							<img src="images/portfolio_images/Roundicons-08.png">
+							<div class="overlay">Web Design</div>
+						</div>
+					</div>	
+				</div>
+			</div>
+		</div>
+
+		<div id="about">
+			<div class="container">
+				<div class="row" id="about_header">
+					<h2 class="col-md-12 text-center">About Us</h2>
+				</div>
+
+				<div class="row" id="about_text">
+					<p class="col-md-12 text-center">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+				</div>
+
+				<div class="row" id="cards">
+					<div class="card-deck">
+						<div class="card">
+							<img src="images/pexels-photo-91227.jpeg" class="card-img-top">
+							<div class="card-body">
+								<h4 class="card-title">Lorem Ipsum is simply</h4>
+								<h5><i>Project Manager</i></h5>
+								<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.  when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+							</div>
+
+							<div class="social">
+								<ul>
+									<li><a class="facebook_icon" href="#"> </a> </li>
+									<li><a class="twitter_icon" href="#"> </a> </li>
+									<li><a class="google_icon" href="#"> </a> </li>
+									<li><a class="pinterest_icon" href="#"> </a> </li>
+									<div class="clear"> </div>
+								</ul>
+							</div>
+						</div>
+
+						<div class="card">
+							<img src="images/pexels-photo-428339.jpeg" class="card-img-top">
+							<div class="card-body">
+								<h4 class="card-title">Lorem Ipsum is simply</h4>
+								<h5><i>Project Manager</i></h5>
+								<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.  when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+							</div>
+
+							<div class="social">
+								<ul>
+									<li><a class="facebook_icon" href="#"> </a> </li>
+									<li><a class="twitter_icon" href="#"> </a> </li>
+									<li><a class="google_icon" href="#"> </a> </li>
+									<li><a class="pinterest_icon" href="#"> </a> </li>
+									<div class="clear"> </div>
+								</ul>
+							</div>
+						</div>
+
+						<div class="card">
+							<img src="images/pexels-photo-220453.jpeg" class="card-img-top">
+							<div class="card-body">
+								<h4 class="card-title">Lorem Ipsum is simply</h4>
+								<h5><i>Project Manager</i></h5>
+								<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.  when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+							</div>
+
+							<div class="social">
+								<ul>
+									<li><a class="facebook_icon" href="#"> </a> </li>
+									<li><a class="twitter_icon" href="#"> </a> </li>
+									<li><a class="google_icon" href="#"> </a> </li>
+									<li><a class="pinterest_icon" href="#"> </a> </li>
+									<div class="clear"> </div>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="contact">
+			<div class="container">
+				<div class="row" id="about_header">
+					<h2 class="col-md-12 text-center">Contact Us</h2>
+				</div>
+
+				<div class="row" id="about_text">
+					<p class="col-md-12 text-center">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+				</div>
+
+				<div class="row" id="contact_form">
+					<div class="col-md-7" id="form">
+						<div class="row" id="form_1">
+							<div class="col">
+						      	<input type="text" class="form-control" placeholder="Your Name">
+    						</div>
+    						<div class="col">
+      							<input type="text" class="form-control" placeholder="Your Email">
+    						</div>
+						</div>
+
+						<div class="row" id="form_2">
+							<div class="col">
+								<textarea class="form-control" rows="10" placeholder="Your Message"></textarea>		
+							</div>
+						</div>
+
+						<div class="row" id="form_3">
+							<div class="col">
+								<a href="#" id="submit">Submit</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="contact col-md-5" id="information">
+						<h5>INFORMATION</h5>
+						<ul>
+							<li>
+								<ul class="contact__add1">
+									<li>Lorem ipsum consectetu</li>
+									<li>12345-Lorem ipsum consectetu</li>
+									<li>Lorem ipsum , consectetu</li>
+								</ul>
+							</li>
+
+							<li>
+								<img src="images/phone.png">
+								<p>+1 800(Phone) 258 2598</p>
+							</li>
+
+							<li>
+								<img src="images/fax.png">
+								<p>+1 500(Tax) 6343 8690</p>
+							</li>
+
+							<li>
+								<img src="images/mail.png">
+								<p>info(at)appstore.com</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="back-to-top">
+		<a href="#top"><span><img src="images/scroll-to-top.png"></span></a>
+	</div>
+</body>
+</html>
